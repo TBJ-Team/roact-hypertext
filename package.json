@@ -1,34 +1,42 @@
 {
-  "name": "roact-hypertext",
+  "name": "@rbxts/roact-hypertext",
   "version": "1.0.0",
-  "description": "Add common HTML tags to Roact, including a CSS system.",
-  "main": "index.js",
+  "description": "",
+  "main": "out/init.lua",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prepublishOnly": "rbxtsc"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/TBJ-Team/roact-hypertext.git"
+    "url": "git+https://github.com/GyroLabs/roact-hypertext.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/TBJ-Team/roact-hypertext/issues"
+    "url": "https://github.com/GyroLabs/roact-hypertext/issues"
   },
-  "homepage": "https://github.com/TBJ-Team/roact-hypertext#readme",
+  "homepage": "https://github.com/GyroLabs/roact-hypertext#readme",
+  "types": "out/index.d.ts",
+  "files": [
+    "out"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
   "devDependencies": {
-    "@rbxts/types": "^1.0.402",
-    "@typescript-eslint/eslint-plugin": "^4.3.0",
-    "@typescript-eslint/parser": "^4.3.0",
-    "eslint": "^7.10.0",
-    "eslint-config-prettier": "^6.12.0",
-    "eslint-plugin-prettier": "^3.1.4",
-    "eslint-plugin-roblox-ts": "0.0.21",
-    "prettier": "^2.1.2",
-    "typescript": "^4.0.3"
+    "@rbxts/compiler-types": "^1.0.0-types.0",
+    "@rbxts/types": "^1.0.462",
+    "@typescript-eslint/eslint-plugin": "^4.17.0",
+    "@typescript-eslint/parser": "^4.17.0",
+    "eslint": "^7.22.0",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-roblox-ts": "^0.0.25",
+    "prettier": "^2.2.1",
+    "typescript": "^4.2.3"
   },
   "dependencies": {
-    "@rbxts/roact": "^1.3.0-ts.2"
+    "@rbxts/roact": "^1.3.0-ts.10"
   }
 }
